@@ -1,0 +1,21 @@
+body{
+    background: yellow;
+    color: green;
+}
+h2{
+    color: blue;
+}
+
+button{
+    background-color: lime;
+    color: cornflowerblue;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+}
+input{
+    background-color: beige;
+    color: darkblue;
+    font-style: italic;
+    font-weight: lighter;
+}

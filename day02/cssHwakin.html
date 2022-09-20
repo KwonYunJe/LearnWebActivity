@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write</title>
+    <style>
+        #list, #inp{
+            background: lime;
+            color: black;
+        }
+        #num, #title, #in, #writer{
+            background: white;
+            color: blue;
+        }
+        td{
+            width: 150px;
+        }
+        table{
+            text-align: center;
+            background: yellow;
+        }
+        button{
+            width: 250px;
+            color: green;
+            background: white;
+        }
+        input{
+            background: pink;
+            width: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td id="list">
+                항목
+            </td>
+            <td id="inp">
+                입력
+            </td>
+        </tr>
+        <tr>
+            <td id="num">
+                번호
+            </td>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+        </tr>
+        <tr>
+            <td id="title">
+                제목
+            </td>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+        </tr>
+        <tr>
+            <td id="in">
+                내용
+            </td>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+        </tr>
+        <tr>
+            <td id="writer">
+                작성자
+            </td>
+            <td>
+                <input type="text" name="number" id="number">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="button">글쓰기 완료.</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
