@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+        #total{
+            width: 800px;
+            height: 800px;
+            background: lightblue;
+            text-align: center;
+            position: absolute;
+            left: 5px;
+        }
+        li{
+            list-style: none;
+            float: left;
+            padding: 15px;
+            width: 100px;
+            height: 50px;
+            color: red;
+            border-radius: 50px;
+            text-align: center;
+        }
+        li:nth-child(2n){         /* ul의 li가 child중에서 몇번째인가 */
+            background: orange;
+        }
+        li:nth-child(2n+1){
+            background: yellow;
+        }
+        #top2 > li{
+            background: black;
+            color: yellow;
+            border-radius: 100px 10px;
+            width: 250px;
+            height: 100px;
+            top: 5px;
+            right: 5px;
+            position: fixed;
+        }
+        #center{
+            padding: 30px;
+            align-content: center;
+            vertical-align: middle;
+            width: 800px;
+            height: 500px;
+        }
+        #center > table{
+            font-size: 15px;
+            color: blue;
+        }
+        /* li:first-child{
+            border-radius: 50px 0 0 50px;
+        }
+        li:last-child{
+            border-radius: 0 50px 50px 0;
+        } */    
+
+        a{
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+        }
+        #top{
+            width: 800px;
+            height: 100px;
+            background: lime;
+            padding: 2px 2px 2px 2px;
+        }
+        #bootST{
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            background-color: violet;
+        }
+        #bootS{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="total">
+        <div id="top">
+            <li>
+                <a href="member.html">Sign Up</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+            <li>
+                <a href="bss.html">Board</a>
+            </li>
+            <li>
+                <a href="basket.html">Basket</a>
+            </li>
+        </div>
+        <div id="top2">
+            <li>
+                고정된 화면 보이는 부분
+            </li>
+        </div>
+        <div id="center">
+            <table border="1">
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Potato
+                    </td>
+                    <td>
+                        Fried Potato
+                    </td>
+                    <td>
+                        1000won
+                    </td>
+                    <td>
+                        <img src="img/KakaoTalk_Photo_2022-09-21-11-26-26.png" width="300px">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        1
+                    </td>
+                    <td>
+                        Potato
+                    </td>
+                    <td>
+                        Fried Potato
+                    </td>
+                    <td>
+                        1000won
+                    </td>
+                    <td>
+                        <img src="img/KakaoTalk_Photo_2022-09-21-11-26-26.png" width="300px">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div id="bootST">
+        <table border="1" id="bootS">
+            <tr>
+                <td>
+                    <button type="button" class="btn">Basic</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary">Blue Button</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-secondary">Gray Button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-success">Green Button</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-info">Ocean Button</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-warning">Yellow Button</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-danger">Red Button</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-dark">Black Button</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-light">White Button</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="button" class="btn btn-link">Link Button</button> 
+                </td>
+            </tr>
+        </table>
+    
+</body>
+</html>
