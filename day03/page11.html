@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i=0;
+
+        while(i=1){
+            where = prompt('where are you going? (mountain = 1, river = 2, sea = 3)')
+
+            if(where == 1){
+                alert('You choose mountain! Lets go to Hala Mountain!')
+                document.write('You went hala mountain <br>')
+                break;
+            }
+            else if(where == 2){
+                alert('You choose river! Lets go to Han River!')
+                document.write('You went Han river <br>')
+                break;
+            }
+            else if(where == 3){
+                alert('You choose sea! Lets go to Haeundae!')
+                document.write('You went Haeundae <br>')
+                break;
+            }
+            else {
+                alert('Oops! you choose wrong palce')
+                document.write('You coudnt go anywhere<br>')
+                i=1;
+            }
+        }
+
+        
+
+        idScan = prompt('Enter your id')
+
+        if(idScan == 'admin'){
+            alert('Administrator Login successful')
+        }
+        else{
+            alert('General user Login successful')
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

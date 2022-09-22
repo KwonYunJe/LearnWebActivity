@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(x,y){
+            alert('Add')
+            alert('Add Result ' + (x + y))
+        }
+        function minus(x,y) {
+            alert('Minus')
+            alert('Minus Result ' + (x - y))
+        }
+
+        function plus(x, y, z){
+            alert(x + " " + y + "! " + z + "!")
+        }
+        function age(x, y){
+            alert(x + " your next year age is " + (y + 1))
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="add(200, 100)">Plus</button>
+    <button type="button" onclick="minus(500, 100)">Minus</button>
+    <button type="button" onclick="plus('Hello', 'JSP', 'Bye Bye')">String plus</button>
+    <button type="button" onclick="age('HongGildong', 100)">Show Age</button>
+</body>
+</html>

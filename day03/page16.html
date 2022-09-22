@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function plus(){
+            n1 = document.getElementById('n1').value
+            alert('Number01 is ' + n1)
+            n2 = document.getElementById('n2').value
+            alert('Number02 is ' + n2)
+            n1int=parseInt(n1)
+            n2int=parseInt(n2)
+            alert(n1int+n2int)
+        }
+
+        function login(){
+
+            var result = 0;
+            var result2 = 0;
+
+            user = document.getElementById('user').value
+            pw = document.getElementById('pw').value
+
+            if(user == 'root' && pw == '1234'){
+                result = 'Log in Success'
+                result2 = '<img rsc=img/009.png width=250>'
+            }
+            else{
+                result = 'Fail Try again'
+                result2 = '<img rsc=img/010.png width=250>'
+            }
+
+            d1.innerHTML = '<font color=red>' + result + '</font>'
+            d2.innerHTML = result2
+
+        }
+    </script>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td>
+                Number01 : 
+            </td>
+            <td>
+                <input type="text" id="n1"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Number02 : 
+            </td>
+            <td>
+                <input type="text" id="n2"><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="plus()">PLUS</button>
+            </td>
+        </tr>
+    </table>
+    
+    <hr>
+    <table>
+        <tr>
+            <td>
+                ID : 
+            </td>
+            <td>
+                <input type="text" id="user">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                PW : 
+            </td>
+            <td>
+                <input type="password" id="pw">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button onclick="login()">LogIn</button>
+            </td>
+        </tr>
+    </table>
+    <div id="d1">
+    </div>
+    <br>
+    <div id="d2"></div>
+    
+</body>
+</html>

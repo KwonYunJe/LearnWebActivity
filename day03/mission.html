@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        id= 0;
+        pw= 0;
+
+        function idCheck(){
+            result = 0 ;
+
+            idTag = document.getElementById("user").value
+            alert('id is : ' + idTag)
+            alert('id Length : ' + idTag.length);
+
+            if(idTag.length >=5){
+                result = 'ID is more then 5. You can use this ID'
+                id =1;
+            }
+            else{
+                result = 'ID is under then 5. You can not use this ID'
+            }
+            d1.innerHTML = result;
+        }
+
+        function pwCheck(){
+            result = 0;
+            pw1 = 0;
+            pw2 = 0;
+
+            pw1 = document.getElementById("pw").value
+            pw2 = document.getElementById("pw2").value
+
+            if(pw1 == pw2){
+                result = 'Password is same. You can use this Password'
+                pw = 1;
+            }
+            else{
+                result = 'Password is different. You can not use this Password'
+            }
+            d2.innerHTML = result;
+        }
+
+        if(id == 1 && pw == 1){
+            d3.innerHTML = '<img src=OK.png>'
+        }
+    </script>
+    <style>
+        #d1{
+            background: yellow;
+        }
+        #d2{
+            background: lime;
+        }
+        #strCheck{
+            width: 100px;
+            border: 1;
+            border-color: black;
+            background: pink;
+            color: blue;
+        }
+        #pwCheck{
+            width: 150px;
+            border: 1;
+            border-color: black;
+            background: lime;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <h2>Java Script TEST</h2>
+        <hr>
+        <tr>
+            <td>
+                ID : 
+            </td>
+            <td>
+                <input type="text" id="user">
+            </td>
+            <td>
+                <button type="button" id="strCheck" onclick="idCheck()">Check</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                PW : 
+            </td>
+            <td>
+                <input type="password" id="pw">
+            </td>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                PW2 :
+            </td>
+            <td>
+                <input type="password" id="pw2">
+            </td>
+            <td>
+                <button type="button" id="pwCheck" onclick="pwCheck()">Password Check</button>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <div id="d1"><br></div>
+    <div id="d2"><br></div>
+    <div id="d3"><br></div>
+</body>
+</html>
